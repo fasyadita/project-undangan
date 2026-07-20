@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-subheading: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+    --font-button: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+
+    --color-primary-gold: #D4AF37;
+    --color-secondary-ivory: #F8F7F3;
+    --color-text-primary: #1F2937;
+    --color-text-secondary: #6B7280;
+    --color-accent-gold: #E9D8A6;
+}
+
+[x-cloak] {
+    display: none !important;
+}

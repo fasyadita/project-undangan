@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan | Romeo & Juliet</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Petals Container for Animation -->
+    <div id="petals-container"></div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Music Control Button -->
+    <button id="music-btn" class="music-control">
+        <i class="fas fa-compact-disc fa-spin"></i>
+    </button>
+
+    <!-- Cover Page -->
+    <section id="cover" class="cover-section">
+        <div class="cover-content glass-card">
+            <p class="subtitle">THE WEDDING OF</p>
+            <h1 class="title">Romeo & Juliet</h1>
+            <p class="date">Minggu, 20 Desember 2026</p>
+            <p class="guest-greet">Kepada Yth.<br>Bapak/Ibu/Saudara/i</p>
+            <div class="guest-name">Tamu Undangan</div>
+            <button id="open-invitation" class="btn-primary">
+                <i class="fas fa-envelope-open-text"></i> Buka Undangan
+            </button>
+        </div>
+    </section>
+
+    <!-- Main Content Wrapper -->
+    <main id="main-content" class="hidden">
+        
+        <!-- Hero Section -->
+        <section class="hero slide-up">
+            <div class="hero-text glass-card">
+                <p>We Are Getting Married</p>
+                <h2>Romeo & Juliet</h2>
+                <div class="countdown" id="countdown">
+                    <div class="time-box"><span id="days">00</span><p>Hari</p></div>
+                    <div class="time-box"><span id="hours">00</span><p>Jam</p></div>
+                    <div class="time-box"><span id="minutes">00</span><p>Menit</p></div>
+                    <div class="time-box"><span id="seconds">00</span><p>Detik</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Couple Section -->
+        <section class="couple-section fade-in">
+            <div class="container">
+                <h2 class="section-title">Sang Mempelai</h2>
+                <p class="bismillah">"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya..." (QS. Ar-Rum: 21)</p>
+                
+                <div class="couple-wrapper">
+                    <!-- Groom -->
+                    <div class="person">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=300" alt="Groom">
+                        </div>
+                        <h3>Romeo Montague</h3>
+                        <p>Putra dari Keluarga Bpk. Montague & Ibu Montague</p>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i> @romeo</a>
+                    </div>
+
+                    <div class="and">&</div>
+
+                    <!-- Bride -->
+                    <div class="person">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=300" alt="Bride">
+                        </div>
+                        <h3>Juliet Capulet</h3>
+                        <p>Putri dari Keluarga Bpk. Capulet & Ibu Capulet</p>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i> @juliet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Story Section -->
+        <section class="story-section fade-in">
+            <div class="container">
+                <h2 class="section-title">Love Story</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h4>Pertama Bertemu</h4>
+                            <span class="timeline-date">Januari 2024</span>
+                            <p>Berawal dari sebuah pertemuan kebetulan di acara teman, kami mulai saling mengenal dan berbagi cerita.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h4>Menjalin Kasih</h4>
+                            <span class="timeline-date">Juni 2024</span>
+                            <p>Seiring berjalannya waktu, rasa nyaman dan kecocokan membuat kami memutuskan untuk menjalin hubungan yang lebih serius.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h4>Lamaran</h4>
+                            <span class="timeline-date">Maret 2026</span>
+                            <p>Dengan restu kedua orang tua dan keluarga besar, kami mengikat janji suci untuk melangkah ke jenjang pernikahan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Details Section -->
+        <section class="event-section fade-in">
+            <div class="container">
+                <h2 class="section-title">Detail Acara</h2>
+                <div class="event-cards">
+                    <!-- Akad Card -->
+                    <div class="event-card glass-card">
+                        <i class="fas fa-ring icon-event"></i>
+                        <h3>Akad Nikah</h3>
+                        <p class="event-date">Minggu, 20 Desember 2026</p>
+                        <p class="event-time">08:00 - 10:00 WIB</p>
+                        <div class="event-location">
+                            <strong>Masjid Agung</strong><br>
+                            Jl. Kebahagiaan No. 1, Jakarta
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="btn-outline">Lihat Peta</a>
+                    </div>
+                    
+                    <!-- Resepsi Card -->
+                    <div class="event-card glass-card">
+                        <i class="fas fa-glass-cheers icon-event"></i>
+                        <h3>Resepsi</h3>
+                        <p class="event-date">Minggu, 20 Desember 2026</p>
+                        <p class="event-time">11:00 - 14:00 WIB</p>
+                        <div class="event-location">
+                            <strong>Grand Ballroom Hotel</strong><br>
+                            Jl. Cinta Kasih No. 99, Jakarta
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="btn-outline">Lihat Peta</a>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="map-container glass-card">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.24009714856!2d106.74411132646282!3d-6.229746522301918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x100c5e82dd4b820!2sJakarta%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1714545025732!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section fade-in">
+            <div class="container">
+                <h2 class="section-title">Galeri Momen</h2>
+                <div class="gallery-grid">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=500" alt="Gallery 1" class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=500" alt="Gallery 2" class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=500" alt="Gallery 3" class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&q=80&w=500" alt="Gallery 4" class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&q=80&w=500" alt="Gallery 5" class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&q=80&w=500" alt="Gallery 6" class="gallery-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP & Wishes Section -->
+        <section class="rsvp-section fade-in">
+            <div class="container">
+                <h2 class="section-title">Kehadiran & Ucapan</h2>
+                <div class="rsvp-card glass-card">
+                    <form id="rsvp-form">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="attendance">Konfirmasi Kehadiran</label>
+                            <select id="attendance" required>
+                                <option value="" disabled selected>Pilih kehadiran</option>
+                                <option value="Hadir">Hadir</option>
+                                <option value="Tidak Hadir">Tidak Hadir</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pax">Jumlah Orang</label>
+                            <select id="pax">
+                                <option value="1">1 Orang</option>
+                                <option value="2">2 Orang</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Ucapan & Doa</label>
+                            <textarea id="message" rows="4" placeholder="Tuliskan ucapan untuk kedua mempelai" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-100">Kirim RSVP</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container text-center">
+                <h2>Romeo & Juliet</h2>
+                <p>Terima kasih atas doa dan restu yang telah diberikan.</p>
+                <div class="credit">
+                    <p>Created with <i class="fas fa-heart"></i> for Special Moments</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Lightbox Modal for Gallery -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
