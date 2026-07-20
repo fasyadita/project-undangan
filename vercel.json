@@ -29,7 +29,6 @@
         "APP_ROUTES_CACHE": "/tmp/routes.php",
         "VIEW_COMPILED_PATH": "/tmp",
         "SESSION_DRIVER": "cookie",
-        "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr"
     }
 }
